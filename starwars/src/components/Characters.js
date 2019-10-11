@@ -40,34 +40,17 @@ export default function Characters() {
   }, []);
 
   return (
-
-   
-
-   
       <Container>
         
         <Row>
-          {/* <Col xs="3">
-          {/* <div className="swapi">
-          {swapi.map(swapi => {
-            return <Profile homeworld = {swapi.homeworld} species =     {swapi.species}/>
-          })}
-          </div>  </Col> */}
 
            <div className="swapi">
-           
-            {/* <Col xs="6"> */}
             {swapi.map(swapi => {
                 return <Profile key = {swapi.index} name={swapi.name} birth = {swapi.birth_year}  eye = {swapi.eye_color} mass = {swapi.mass} height = {swapi.height} />
                 })}
-            {/* </Col> */}
 
             </div>
           
-
-
-
-
         </Row>
 
       </Container>
